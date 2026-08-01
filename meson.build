@@ -1,7 +1,7 @@
-project('NitroSystem', 'c',
+project('NitroSystem', 'c', 'cpp',
     default_options: {
         'default_library': 'static',
-        'prefer_static':    true
+        'prefer_static':    false
     },
     meson_version: '>=1.2.0',
     version: '071126.1'
@@ -118,3 +118,7 @@ nitrosystem_dep = declare_dependency(
 )
 
 meson.override_dependency('NitroSystem', nitrosystem_dep)
+
+if(get_option('standalone') == true)
+    subdir('standalone')
+endif

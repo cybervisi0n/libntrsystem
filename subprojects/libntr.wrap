@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/cybervisi0n/libntr.git
+revision = main
+depth = 1
+
+[provide]
+dependency_names = NitroSDK
