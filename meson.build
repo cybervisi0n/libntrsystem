@@ -1,4 +1,4 @@
-project('NitroSystem', 'c', 'cpp',
+project('libntrsystem', 'c', 'cpp',
     default_options: {
         'default_library': 'static',
         'prefer_static':    false
