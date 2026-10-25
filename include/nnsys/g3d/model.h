@@ -9,34 +9,118 @@
 extern "C" {
 #endif
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbDiff(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbAmb(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbSpec(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbEmi(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbLightEnableFlag(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbPolygonMode(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbCullMode(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbPolygonID(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbAlpha(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbFogEnableFlag(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbDepthTestCond(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlb1Dot(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbFarClip(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseGlbXLDepthUpdate(NNSG3dResMdl * pMdl);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlDiff(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlAmb(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlSpec(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlEmi(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlLightEnableFlag(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlPolygonMode(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlCullMode(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlPolygonID(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlAlpha(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlFogEnableFlag(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlDepthTestCond(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdl1Dot(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlFarClip(NNSG3dResMdl * pMdl);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dMdlUseMdlXLDepthUpdate(NNSG3dResMdl * pMdl);
 
 void NNS_G3dMdlSetMdlDiff(NNSG3dResMdl * pMdl, u32 matID, GXRgb col);

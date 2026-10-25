@@ -58,8 +58,17 @@ typedef union {
         pResAnm = NNS_G3dGetAnmByName(pRes, pName);                                            \
     } while (0)
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE BOOL NNSi_G3dBitVecCheck(const u32 * vec, u32 idx);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNSi_G3dBitVecSet(u32 * vec, u32 idx);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNSi_G3dBitVecReset(u32 * vec, u32 idx);
 
 void NNS_G3dGetCurrentMtx(MtxFx43 * m, MtxFx33 * n);
