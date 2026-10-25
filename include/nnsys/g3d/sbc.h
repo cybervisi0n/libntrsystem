@@ -78,19 +78,61 @@ typedef void (*NNSG3dFuncSbc_ShpInternal)(NNSG3dRS *, u32, const NNSG3dResShpDat
 #define NNS_G3D_MTXSTACK_SYS  (30)
 #define NNS_G3D_MTXSTACK_USER (29)
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRSSetCallBack(NNSG3dRS * rs, NNSG3dSbcCallBackFunc func, u8 cmd, NNSG3dSbcCallBackTiming timing);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRSResetCallBack(NNSG3dRS * rs, u8 cmd);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE NNSG3dRenderObj * NNS_G3dRSGetRenderObj(NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE NNSG3dMatAnmResult * NNS_G3dRSGetMatAnmResult(NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE NNSG3dJntAnmResult * NNS_G3dRSGetJntAnmResult(NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE NNSG3dVisAnmResult * NNS_G3dRSGetVisAnmResult(NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE u8 * NNS_G3dRSGetSbcPtr(NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRSSetFlag(NNSG3dRS * rs, NNSG3dRSFlag flag);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRSResetFlag(NNSG3dRS * rs, NNSG3dRSFlag flag);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE int NNS_G3dRSGetCurrentMatID(const NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE int NNS_G3dRSGetCurrentNodeID(const NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE int NNS_G3dRSGetCurrentNodeDescID(const NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE fx32 NNS_G3dRSGetPosScale(const NNSG3dRS * rs);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE fx32 NNS_G3dRSGetInvPosScale(const NNSG3dRS * rs);
 
 void NNS_G3dDraw(struct NNSG3dRenderObj_ * pRenderObj);
@@ -113,9 +155,21 @@ void NNSi_G3dFuncSbc_PRJMAP(NNSG3dRS *, u32);
 void NNSi_G3dFuncSbc_SHP_InternalDefault(NNSG3dRS * rs, u32 opt, const NNSG3dResShpData * shp, u32 idxShp);
 void NNSi_G3dFuncSbc_MAT_InternalDefault(NNSG3dRS * rs, u32 opt, const NNSG3dResMatData * mat, u32 idxMat);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE BOOL NNSi_G3dCallBackCheck_A(NNSG3dRS * rs, u8 cmd, NNSG3dSbcCallBackTiming * pTiming);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE BOOL NNSi_G3dCallBackCheck_B(NNSG3dRS * rs, u8 cmd, NNSG3dSbcCallBackTiming * pTiming);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE BOOL NNSi_G3dCallBackCheck_C(NNSG3dRS * rs, u8 cmd, NNSG3dSbcCallBackTiming timing);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE NNSG3dSbcCallBackTiming NNSi_CheckPossibilityOfCallBack(NNSG3dRS * rs, u8 cmd);
 
 extern NNSG3dFuncSbc NNS_G3dFuncSbcTable[NNS_G3D_SBC_COMMAND_NUM];

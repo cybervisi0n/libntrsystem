@@ -123,8 +123,17 @@ typedef struct NNSG3dRenderObj_ {
 #define NNS_G3D_RENDEROBJ_MATBUFFER_SIZE(numMat) \
     ((u32)(sizeof(NNSG3dMatAnmResult) * (numMat)))
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dAnmObjSetFrame(NNSG3dAnmObj * pAnmObj, fx32 frame);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dAnmObjSetBlendRatio(NNSG3dAnmObj * pAnmObj, fx32 ratio);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE fx32 NNS_G3dAnmObjGetNumFrame(const NNSG3dAnmObj * pAnmObj);
 
 u32 NNS_G3dAnmObjCalcSizeRequired(const void * pAnm, const NNSG3dResMdl * pMdl);
@@ -132,20 +141,59 @@ void NNS_G3dAnmObjInit(NNSG3dAnmObj * pAnmObj, void * pResAnm, const NNSG3dResMd
 void NNS_G3dAnmObjEnableID(NNSG3dAnmObj * pAnmObj, int id);
 void NNS_G3dAnmObjDisableID(NNSG3dAnmObj * pAnmObj, int id);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRenderObjSetFlag(NNSG3dRenderObj * pRenderObj, NNSG3dRenderObjFlag flag);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRenderObjResetFlag(NNSG3dRenderObj * pRenderObj, NNSG3dRenderObjFlag flag);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE BOOL NNS_G3dRenderObjTestFlag(const NNSG3dRenderObj * pRenderObj, NNSG3dRenderObjFlag flag);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE u8 * NNS_G3dRenderObjSetUserSbc(NNSG3dRenderObj * pRenderObj, u8 * sbc);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRenderObjSetJntAnmBuffer(NNSG3dRenderObj * pRenderObj, struct NNSG3dJntAnmResult_ * buf);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRenderObjSetMatAnmBuffer(NNSG3dRenderObj * pRenderObj, struct NNSG3dMatAnmResult_ * buf);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE struct NNSG3dJntAnmResult_ * NNS_G3dRenderObjReleaseJntAnmBuffer(NNSG3dRenderObj * pRenderObj);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE struct NNSG3dMatAnmResult_ * NNS_G3dRenderObjReleaseMatAnmBuffer(NNSG3dRenderObj * pRenderObj);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void * NNS_G3dRenderObjSetUserPtr(NNSG3dRenderObj * pRenderObj, void * ptr);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE NNSG3dResMdl * NNS_G3dRenderObjGetResMdl(NNSG3dRenderObj * pRenderObj);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRenderObjSetBlendFuncMat(NNSG3dRenderObj * pRenderObj, NNSG3dFuncAnmBlendMat func);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRenderObjSetBlendFuncJnt(NNSG3dRenderObj * pRenderObj, NNSG3dFuncAnmBlendJnt func);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dRenderObjSetBlendFuncVis(NNSG3dRenderObj * pRenderObj, NNSG3dFuncAnmBlendVis func);
 
 void NNS_G3dRenderObjInit(NNSG3dRenderObj * pRenderObj, NNSG3dResMdl * pResMdl);

@@ -52,30 +52,96 @@ typedef struct {
     VecFx32 camTarget;
 } NNSG3dGlb;
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbLookAt(const VecFx32 * camPos, const VecFx32 * camUp, const VecFx32 * target);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbFrustum(fx32 t, fx32 b, fx32 l, fx32 r, fx32 n, fx32 f);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbFrustumW(fx32 t, fx32 b, fx32 l, fx32 r, fx32 n, fx32 f, fx32 scaleW);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbPerspective(fx32 fovySin, fx32 fovyCos, fx32 aspect, fx32 n, fx32 f);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbPerspectiveW(fx32 fovySin, fx32 fovyCos, fx32 aspect, fx32 n, fx32 f, fx32 scaleW);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbOrtho(fx32 t, fx32 b, fx32 l, fx32 r, fx32 n, fx32 f);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbOrthoW(fx32 t, fx32 b, fx32 l, fx32 r, fx32 n, fx32 f, fx32 scaleW);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbSetProjectionMtx(const MtxFx44 * m);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbSetBaseRot(const MtxFx33 * pRot);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbSetViewPort(int x1, int y1, int x2, int y2);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const MtxFx43 * NNS_G3dGlbGetCameraMtx(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const MtxFx44 * NNS_G3dGlbGetProjectionMtx(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const MtxFx33 * NNS_G3dGlbGetBaseRot(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const VecFx32 * NNS_G3dGlbGetBaseTrans(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const VecFx32 * NNS_G3dGlbGetBaseScale(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const VecFx32 * NNS_G3dGlbGetCameraPos(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const VecFx32 * NNS_G3dGlbGetCameraUp(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const VecFx32 * NNS_G3dGlbGetCameraTarget(void);
 
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbFlush(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE void NNS_G3dGlbFlushAlt(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const MtxFx43 * NNS_G3dGlbGetSrtCameraMtx(void);
+#ifdef SDK_PORT
+static
+#endif
 NNS_G3D_INLINE const MtxFx43 * NNS_G3dGlbGetInvSrtCameraMtx(void);
 
 void NNS_G3dGlbInit(void);
